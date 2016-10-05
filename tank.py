@@ -19,16 +19,12 @@ class Solution(object):
 			m_index = i
 	if m_index>0:
 		for j in range(1,m_index):
-			diff=rev[j]-rev[j-1]
-			if diff>0:
-				tank+=diff
-				rev[j]=rev[j]-diff
-				print diff
+			if rev[j]-rev[j-1]>0:
+				tank+=(rev[j]-rev[j-1])
+				rev[j]=rev[j-1]
 	if m_index<n:
 		for j in range(n-1,m_index,-1):
-			diff=rev[j-1]-rev[j]
-			if diff>0:
-				tank+=diff
-				rev[j-1]-=diff
-				print diff
+			if rev[j-1]-rev[j]>0:
+				tank+=(rev[j-1]-rev[j])
+				rev[j-1]-=rev[j]
 	return tank
