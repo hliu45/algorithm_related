@@ -8,15 +8,12 @@ class Solution(object):
         """
 	tank = 0
 	n = len(height)
-	m = max(height)
+	# m: the peak of tank, m_index: index of that peak
+	(m,m_index) = max((v,i) for i,v in enumerate(height))
 	# rev store the info. of wate up to the highest surface to the peak
 	rev = [] 
-	# the index of highest peak
-	m_index = 0 # 
 	for i in range(0,n):
 		rev.append(m-height[i])
-		if m==height[i]:
-			m_index = i
 	if m_index>0:
 		for j in range(1,m_index):
 			if rev[j]-rev[j-1]>0:
