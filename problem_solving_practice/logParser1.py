@@ -1,5 +1,4 @@
-print "Hello"
-
+# for practicing log parser
 number = 1234 # integer
 floatNum = 123.456 # Decimal/floating
 string = 'howareyou' # string

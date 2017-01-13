@@ -25,7 +25,6 @@ class Solution(object):
         result=[]
     
         while n%2==0 and n>1:
-            
             for i in range(n/2):
                 if i==0:
                     word[i], word[n-1-i]= mask1[count[i]][0], mask1[count[i]][1]
@@ -36,7 +35,6 @@ class Solution(object):
             for i in range(n):
                 tmp+=word[i]
             result.append(tmp)
-            
             
             
             count[n/2-1]+=1 
@@ -71,12 +69,5 @@ class Solution(object):
                     count[n/2-i]=0 
             if count[0]==wordcount[0]: 
                 break 
-        
-        
-        
-        
-        
-        
-        
         
         return result

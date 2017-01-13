@@ -1,4 +1,7 @@
 class Solution(object):
+
+    # the function is to return how many island given by grid, grid is a 2D dimension, which constitue by {0,1}
+    # 1: land; 0: ocean
     def numIslands(self, grid):
         yellow, golden = [], []
         grey = {}
@@ -22,6 +25,9 @@ class Solution(object):
             for j in range(m):
                 grey[(i,j)]=False
         
+        # Using color grey, yellow and golden to distinguish first discovered, transition, discovered afterward
+        # it first search, once it found land '1', mark the '1' as yellow and expand to neighbor area
+        # for every neighbor area also area '1', mark it gray, in the following step, marked the original '1', golden  
         for i in range(n):
             for j in range(m):
                 if grid[i][j]=='1' and grey[(i,j)]==False:

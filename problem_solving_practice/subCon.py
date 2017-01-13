@@ -17,6 +17,7 @@ class Solution(object):
                 return list
 
 
+# test function findSubstring
 s = "barfoothefoobarman"
 words = ["foo","bar"]
 
