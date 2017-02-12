@@ -109,6 +109,14 @@ class Linkedlist:
 			fast = fast.next.next
 		return False
 
+	def reverseList(self):
+		curr = self.head
+		while curr.next:
+			tem = curr.next
+			curr.next = tem.next
+			tem.next = self.head
+			self.head = tem
+
 
 
 
@@ -128,46 +136,56 @@ node = Node('d')
 linkedlist.insertAfterTail(node)
 node = Node('e')
 linkedlist.insertAfterTail(node)
-
-
-# print linkedlist
-linkedlist.printList()
-
-# get tail nummber
-print linkedlist.getTailNumber()
-
-# print linkedlist
-linkedlist.printList()
-
-# insert letter z before head
-linkedlist.insertBeforeHead('z')
-
-# print linkedlist
-linkedlist.printList() 
-
-# access to 3th node
-print linkedlist.valueAt(3)
-
-# delete 2th node
-linkedlist.deleteNthNode(2)
-linkedlist.printList()
-
-# delete tail
-linkedlist.deleteTailNode()
-linkedlist.printList()
-
-# insert z node after the tail
-node = Node('z')
+node = Node('f')
+linkedlist.insertAfterTail(node)
+node = Node('g')
 linkedlist.insertAfterTail(node)
 
 # print linkedlist
 linkedlist.printList()
 
-# print check if cycle exist
-print 'isCyclePresent() check:',linkedlist.isCyclePresent()
+# reverse linkedlist
+linkedlist.reverseList()
+
+# print linkedlist
+linkedlist.printList()
+
+
+# get tail nummber
+#print linkedlist.getTailNumber()
+
+# print linkedlist
+#linkedlist.printList()
+
+# insert letter z before head
+#linkedlist.insertBeforeHead('z')
+
+# print linkedlist
+#linkedlist.printList() 
+
+# access to 3th node
+#print linkedlist.valueAt(3)
+
+# delete 2th node
+#linkedlist.deleteNthNode(2)
+#linkedlist.printList()
+
+# delete tail
+#linkedlist.deleteTailNode()
+#linkedlist.printList()
+
+# insert z node after the tail
+#node = Node('z')
+#linkedlist.insertAfterTail(node)
+
+# print linkedlist
+#linkedlist.printList()
 
 # print check if cycle exist
-print '_isCyclePresent() check:',linkedlist._isCyclePresent()
+#print 'isCyclePresent() check:',linkedlist.isCyclePresent()
+
+# print check if cycle exist
+#print '_isCyclePresent() check:',linkedlist._isCyclePresent()
 
 
 
