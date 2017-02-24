@@ -152,40 +152,40 @@ linkedlist.printList()
 
 
 # get tail nummber
-#print linkedlist.getTailNumber()
+print linkedlist.getTailNumber()
 
 # print linkedlist
-#linkedlist.printList()
+linkedlist.printList()
 
 # insert letter z before head
-#linkedlist.insertBeforeHead('z')
+linkedlist.insertBeforeHead('z')
 
 # print linkedlist
-#linkedlist.printList() 
+linkedlist.printList() 
 
 # access to 3th node
-#print linkedlist.valueAt(3)
+print linkedlist.valueAt(3)
 
 # delete 2th node
-#linkedlist.deleteNthNode(2)
-#linkedlist.printList()
+linkedlist.deleteNthNode(2)
+linkedlist.printList()
 
 # delete tail
-#linkedlist.deleteTailNode()
-#linkedlist.printList()
+linkedlist.deleteTailNode()
+linkedlist.printList()
 
 # insert z node after the tail
-#node = Node('z')
-#linkedlist.insertAfterTail(node)
+node = Node('z')
+linkedlist.insertAfterTail(node)
 
 # print linkedlist
-#linkedlist.printList()
+linkedlist.printList()
 
 # print check if cycle exist
-#print 'isCyclePresent() check:',linkedlist.isCyclePresent()
+print 'isCyclePresent() check:',linkedlist.isCyclePresent()
 
 # print check if cycle exist
-#print '_isCyclePresent() check:',linkedlist._isCyclePresent()
+print '_isCyclePresent() check:',linkedlist._isCyclePresent()
 
 
 
